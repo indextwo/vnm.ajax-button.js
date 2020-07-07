@@ -12,6 +12,13 @@ A handy jQuery utility for creating ajaxified button actions based on `data` att
 <script type="text/javascript" src="jquery.ajax-button.js"></script>
 ```
 
+This is also built on the assumption that the ajax function will return a `response` object with a value of `success` for any successful actions. Any other value (or lack thereof) will be taken as a failure.
+
+The ajax response can also contain:
+
+ - `trigger`: This will action a `$('body').trigger(data.trigger, data)` - with the full ajax response as the data parameter.
+ - `func`: This will attempt to resolve the passed (string) value to a function and execute it. It doesn't taken any parameters.
+
 ## Usage
 
 There are a _lot_ of different options, all listed and (mostly) commented in the code, but here's a verbose example:
