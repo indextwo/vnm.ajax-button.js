@@ -16,7 +16,8 @@ A handy jQuery utility for creating ajaxified button actions based on `data` att
 
 There are a _lot_ of different options, all listed and (mostly) commented in the code, but here's a verbose example:
 
-```<div class="ajax-send-container">
+```html
+<div class="ajax-send-container">
 	<input type="text" name="useremail" id="useremail" class="whitebg" placeholder="Email" autocomplete="email" />
 	
 	<button type="button" class="button ajax-send" 
