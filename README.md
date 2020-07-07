@@ -30,7 +30,8 @@ There are a _lot_ of different options, all listed and (mostly) commented in the
 			<?php _e('Reset password', 'vnmProfile'); ?>
 		</button>
 	</div>
-</div>```
+</div>
+```
 
  - The class `ajax-send-container` added to the wrapping `<div>` tells the button (with a `data-sendfields` attribute value of `1`) to include the value of ALL fields within it. 
  - `data-ajaxaction` is the ajaxified action to send to the ajax URL. By default this assumes there is a predefined `ajaxObject.ajaxurl` property (assigned via `wp_localize_script()` in WP)
